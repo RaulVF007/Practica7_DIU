@@ -56,15 +56,15 @@ public class ImageViewer extends javax.swing.JFrame {
         public void adjustmentValueChanged(AdjustmentEvent e) {         
             if (img != null){
                 stats.calculaEstadisticas(img, jScrollPane2.getViewport().getViewPosition(), jScrollPane2.getViewport().getExtentSize());
-                String statsString = "Valores máximos: \n";
+                String statsString = "Valores máximos actualizados: \n";
                 statsString += "Rojo: " + stats.getMaximo()[0];
                 statsString += " Verde: " + stats.getMaximo()[1];
                 statsString += " Azul: " + stats.getMaximo()[2] + "\n";                
-                statsString += "\nValores mínimos:\n";
+                statsString += "\nValores mínimos actualizados:\n";
                 statsString += "Rojo: " + stats.getMinimo()[0];
                 statsString += " Verde: " + stats.getMinimo()[1];
                 statsString += " Azul: " + stats.getMinimo()[2] + "\n";
-                statsString += "\nValores promedios: \n";
+                statsString += "\nValores promedios actualizados: \n";
                 statsString += "Rojo: " + stats.getPromedio()[0];
                 statsString += " Verde: " + stats.getPromedio()[1];
                 statsString += " Azul: " + stats.getPromedio()[2];
