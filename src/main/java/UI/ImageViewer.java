@@ -14,6 +14,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollBar;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import nu.pattern.OpenCV;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -37,7 +38,8 @@ public class ImageViewer extends javax.swing.JFrame {
     public ImageViewer() {
         initComponents();
         nu.pattern.OpenCV.loadLocally();
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        OpenCV.loadShared();
+        //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         
         X = jScrollPane1.getVerticalScrollBar();
         Y = jScrollPane1.getHorizontalScrollBar();
