@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollBar;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import nu.pattern.OpenCV;
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
 
@@ -198,7 +197,7 @@ public class ImageViewer extends javax.swing.JFrame {
 
     private void aboutItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutItemActionPerformed
         String text="1.- Open an image you have located in your pc at"
-        + "the 'File' menu -> 'Open image'\n2.- Then, it will be shown the maximum, "
+        + " the 'File' menu -> 'Open image'\n2.- Then, it will be shown the maximum, "
                 + "minimum and average values from the RGB components of the image\n"
                 + "3.- These values will be displayed while you are sliding through"
                 + "the entire image with the scroll pane component";
